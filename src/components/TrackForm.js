@@ -17,15 +17,15 @@ const TrackForm = () => {
 
     return (<>
         <Spacer>
-            <Input value={name} onChangeText={changeName} placeholder="Enter Name"/>
+            <Input value={name} onChangeText={changeName} placeholder="添加名字"/>
         </Spacer>
         {recording
-            ? (<Button title="Stop Tracking" onPress={stopRecording}/>) 
-            : (<Button title="Start Tracking" onPress={startRecording}/>)
+            ? (<Button title="停止追踪" onPress={stopRecording}/>) 
+            : (<Button title="开始追踪" onPress={startRecording}/>)
         }
         <Spacer>
         {!recording && locations.length
-            ? <Button title="Save Recording" onPress={saveTrack}/>
+            ? <Button title="保存路线" onPress={saveTrack}/>
             : null
         }
         </Spacer>

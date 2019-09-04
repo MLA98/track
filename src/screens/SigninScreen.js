@@ -15,14 +15,14 @@ const SigninScreen = ({ navigation }) => {
             onWillBlur={clearErrorMessage}
         />
         <AuthForm
-            headerText="Sign in for Tracker"
+            headerText="登陆"
             errorMessage={state.errorMessage}
             onSubmit={signin}
-            submitButtonText="Sign In"
+            submitButtonText="登陆"
         />
         <NavLink
             routeName="SignUp"
-            text="Don't have an account, sign up instead" 
+            text="没有账号？请注册" 
         />
     </View>)
 };

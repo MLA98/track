@@ -12,7 +12,7 @@ const AuthFrom = ({ headerText, errorMessage, onSubmit, submitButtonText }) => {
         <Text h4> {headerText} </Text>
         </Spacer>
         <Spacer>
-            <Input label="Email" 
+            <Input label="邮箱" 
                     value={email} 
                     onChangeText={(newemail) => setEmail(newemail)}
                     autoCapitalize="none"
@@ -22,7 +22,7 @@ const AuthFrom = ({ headerText, errorMessage, onSubmit, submitButtonText }) => {
         <Spacer>
             <Input 
                 secureTextEntry={true}
-                label="Password" 
+                label="密码" 
                 value={password}
                 onChangeText={(newPwd) => setPwd(newPwd)}
                 autoCapitalize="none"

@@ -11,9 +11,9 @@ const AccountScreen = () => {
     const {signout} = useContext(AuthContext);
 
     return (<SafeAreaView forceInset={{top : 'always'}}>
-                <Text h4>AccountScreen</Text>
+                <Text h4> 账号管理 </Text>
                 <Spacer>
-                    <Button title="Sign Out" onPress={signout}/>
+                    <Button title="注销" onPress={signout}/>
                 </Spacer>
             </SafeAreaView>
     );
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 });
 
 AccountScreen.navigationOptions = {
-    title: 'Account',
+    title: '账号',
     tabBarIcon: <FontAwesome name="gear" size={20}/>
 };
 

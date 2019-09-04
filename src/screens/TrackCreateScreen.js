@@ -16,9 +16,9 @@ const TrackCreateScreen = ({isFocused}) => {
 
     return (
         <SafeAreaView>
-            <Text h4>Create Track</Text>
+            <Text h4>创建路线</Text>
             <Map/>
-            {err ? <Text> Please enable location services. </Text> : null}
+            {err ? <Text> 请开启定位服务 </Text> : null}
             <TrackForm/>
         </SafeAreaView>
     );
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 });
 
 TrackCreateScreen.navigationOptions = {
-    title: 'Add Tracks',
+    title: '添加路线',
     tabBarIcon: <FontAwesome name="plus" size={20}/>
 };
 

@@ -9,12 +9,18 @@ const TrackListScreen = ({navigation}) => {
     const {state, fetchTracks} = useContext(TrackContext);
 
     // console.log(state);
+    if(!state){
+        state_ = [];
+    }
+    else{
+        state_ = state;
+    }
 
     return (<>
         <NavigationEvents onWillFocus={()=>fetchTracks()}/>
         {/* <Button title="Go to track detail" onPress={() => navigation.navigate('TrackDetail')}/> */}
         <FlatList
-            data={state}
+            data={state_}
             keyExtractor={item=>item._id}
             renderItem={({item}) => {
                 return <TouchableOpacity onPress={() => 
@@ -28,8 +34,7 @@ const TrackListScreen = ({navigation}) => {
 };
 
 TrackListScreen.navigationOptions = {
-    title: 'Tracks',
-    
+    title: '路线',
 };
 
 const styles = StyleSheet.create({

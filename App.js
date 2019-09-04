@@ -25,7 +25,7 @@ const trackListFlow = createStackNavigator({
 });
 
 trackListFlow.navigationOptions = {
-  title: 'Tracks',
+  title: '我的路线',
   tabBarIcon: <FontAwesome name="th-list" size={20}/>
 }
 
